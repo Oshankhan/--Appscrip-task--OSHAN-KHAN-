@@ -1,0 +1,182 @@
+/* General Footer Styling */
+.footer {
+  background-color: #1c1c1c; /* Dark background */
+  color: #ffffff; /* White text */
+  padding: 40px 20px;
+  font-family: "Arial", sans-serif;
+}
+
+.footer p {
+  margin: 0 0 10px;
+}
+
+.footer-newsletter-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #333;
+}
+
+/* Newsletter Section */
+.newsletter-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.newsletter-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.newsletter-subtitle {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.newsletter-form-container {
+  display: flex;
+  align-items: center;
+}
+
+.newsletter-input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin-right: 10px;
+  flex: 0.7;
+}
+
+.newsletter-button {
+  padding: 10px 20px;
+  background-color: black;
+  color: #fff;
+  border: 1px solid white;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter-button:hover {
+  background-color: #d35400;
+}
+
+/* Contact Info */
+.footer-contact-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-phone,
+.contact-email,
+.contact-description {
+  margin-bottom: 10px;
+}
+
+.contact-currency {
+  display: flex;
+  align-items: center;
+}
+
+.currency-icon {
+  margin-right: 5px;
+}
+
+/* Links Section */
+.footer-links-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px 0;
+}
+
+.footer-links-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-column-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-links-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links-list li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-links-list li:hover {
+  color: #e67e22;
+}
+
+/* Follow Us and Payment */
+.footer-follow-payment {
+  flex: 1;
+  min-width: 300px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.payment-methods {
+  margin-top: 20px;
+}
+
+/* Copyright */
+.footer-copyright {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-newsletter-section,
+  .footer-links-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsletter-content,
+  .footer-contact-info,
+  .footer-links-column,
+  .footer-follow-payment {
+    text-align: center;
+  }
+
+  .newsletter-form-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .newsletter-input {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .newsletter-button {
+    width: 100%;
+  }
+}
