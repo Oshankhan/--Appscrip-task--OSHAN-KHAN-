@@ -4,7 +4,7 @@
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
-
+  --font-sans: "Simplon Norm", Arial, "Noto Sans", sans-serif;
   --foreground-rgb: 0, 0, 0;
 
   --primary-glow: conic-gradient(
@@ -48,6 +48,11 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  align-items: center;
 }
 
 @media (prefers-color-scheme: dark) {

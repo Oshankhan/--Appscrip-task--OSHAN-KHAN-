@@ -1,0 +1,121 @@
+.subNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.subNavText {
+  font-family: Simplon Norm;
+  font-size: 18px;
+  font-weight: 700;
+
+  display: flex;
+
+  align-items: center;
+}
+.subNavText > p {
+  padding-right: 10px;
+}
+
+.collapse-div {
+  font-family: Adobe Caslon Pro;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.sidebar-recommended {
+  font-family: Simplon Norm;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* Dropdown container */
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button */
+.dropdown-btn {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 12px 16px;
+  border-radius: 4px;
+}
+
+/* Dropdown content styling */
+.dropdown-content p {
+  margin: 0;
+  padding: 8px 0;
+  color: black;
+  cursor: pointer;
+}
+
+.dropdown-content p:hover {
+  background-color: #f1f1f1;
+}
+
+.drawer-container {
+  display: flex;
+  transition: all 0.3s ease;
+}
+
+.drawer {
+  width: 0;
+  overflow: hidden;
+  transition: width 0.3s ease;
+  background-color: #f4f4f4;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.drawer.open {
+  width: 250px;
+}
+
+.drawer-toggle {
+  margin-bottom: 1rem;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.drawer-content p {
+  margin: 0;
+  padding: 8px 0;
+  color: black;
+  cursor: pointer;
+}
+
+.drawer-content p:hover {
+  background-color: #e0e0e0;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+.drawer-container.open .main-content {
+  margin-left: 250px;
+}
